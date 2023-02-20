@@ -1,0 +1,23 @@
+
+
+<h1>{{name}}Employees</h1>
+<table class="table">
+    <thead class="bg-dark" style="color:white">
+      <tr>
+        <th scope="col">Employee ID</th>
+        <th scope="col"> Name</th> 
+        <th scope="col">Salary</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody style="color:black" >
+      <tr *ngFor="let employee of Employee">
+       <td scope="col" appBgColor>{{employee.id}}</td>
+        <td scope="col" appBgColor>{{employee.employee_name}}</td>
+        <td scope="col"appBgColor>{{employee.employee_salary }} </td>
+        <td scope="col" appBgColor>{{employee.employee_age  }} </td>
+        </tr>
+   </tbody>
+   
+
+    
